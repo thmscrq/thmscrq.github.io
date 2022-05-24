@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Jetbrains Mono';
+    src: url("../fonts/JetBrainsMono-Medium.woff2") format('woff2'),
+         url("/fonts/JetBrainsMono[wght].ttf") format('truetype');
+}
+
+/* ----- RESET CSS ----- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style :none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align :middle;
+}
+
+/* ----- GLOBAL STYLES ----- */
+
+html{
+    font-family: Manrope, sans-serif;
+}
+
+h1{
+    line-height: 1.333;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: hsla(0, 0%, 0%, 0.6);
+    line-height: 1.6;
+    font-size: 0.938rem;
+    max-width:57.321%;
+}
+
+
+code {
+    font-family: 'Jetbrains Mono', monospace;
+    font-size: 0.938rem;
+}
+p code{
+    background-color: rgb(232, 232, 232);
+    border-radius: 0.125rem;
+    color: hsla(0, 0%, 0%, 0.8);
+    padding: 0.10rem 0.5rem;
+}
+
+section {
+    margin-bottom: 3.5rem;
+}
+
+/* ----- BANNER ----- */
+
+.banner {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    max-width:70rem;
+}
+
+/* ----- TOPIC ----- */
+
+main{
+    margin: 0 auto;
+    max-width: 70rem;
+    padding-top:5rem;
+}
+
+
+
+/* ----- TOPIC TITLE ----- */
+
+article header{
+  margin-bottom:3rem;
+}
+
+
+/* ----- TABLE ----- */
+
+table {
+    border-radius: 0.5em;
+    border: 1px solid #EBE8EF;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+}
+
+thead{
+    color: #FFF;
+    background-color: #524568;
+    font-weight: 500;
+    text-align: left;
+}
+
+th, td{
+    padding: 1.5rem 1rem;
+}
+
+thead th:nth-child(1){
+    width: 16%;
+}
+
+thead th:nth-child(2){
+    width: 50%;
+}
+
+thead th:nth-child(3){
+    width: 34%;
+}
+
+tbody tr:nth-child(even){
+    background-color: #F9F6FE;
+}
+
+
+
+.table-code {
+    padding: 0.75rem 1rem;
+}
+
+.table-code code {
+    background-color: #29222E;
+    border-radius: 4px;
+    display: inline-block;
+    color: #FFFFFF;
+    height: 100%;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+}
